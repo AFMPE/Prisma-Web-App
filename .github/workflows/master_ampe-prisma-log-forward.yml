@@ -75,4 +75,6 @@ jobs:
         with:
           app-name: 'ampe-prisma-log-forward'
           slot-name: 'Production'
-          
+          variables: | 
+            WORKSPACE_ID = "${{ secrets.WORKSPACE_ID }}"
+            SHARED_KEY = "${{ secrets.SHARED_KEY }}"
